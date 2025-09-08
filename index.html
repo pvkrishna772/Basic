@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>My Free Website</title>
+  <title>POSTNOW</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -19,8 +19,8 @@
 <body>
   <h1 id="greeting"></h1>
   <p>Welcome, Let's go 🚀</p>
-  <button id="NEEd">Click Me</button>
-  <button id="AVAILABLE">Click Me</button>
+  <button id="NEEd">NEED</button>
+  <div id="SHOW DATA" style="margin-top: 10px; font-size: 18px;"></div>
 
 
 
@@ -35,7 +35,12 @@
         return "Good Evening 🌙";
       }
     }
-    document.getElementById("greeting").innerText = getGreeting();
+  
+  document.getElementById("NEED").addEventListener("click", function() {
+      document.getElementById("SHOW DATA").innerText = "Hello! This is the text.";
+  });
+     
+   document.getElementById("greeting").innerText = getGreeting();
   </script>
 </body>
 </html>
